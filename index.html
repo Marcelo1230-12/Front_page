@@ -7,63 +7,80 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="hero">
+
+<header class="hero" id="home">
     <nav class="nav">
-        <h1 class="logo"></h1>
-        <a class="button" href="#contact">Contact</a>
+        <h1 class="logo">Angel Marcelo</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#photos">Photos</a>
+            <a class="button" href="#contact">Contact</a>
+        </div>
     </nav>
 
     <div class="hero-content">
-        <p class="kicker">Frontend Developer • UI Enthusiast</p>
-        <h2>Hi, I'm <span class="highlight">ANGEL MARCELO</span></h2>
-        <p>
-            I design and build responsive web experiences with clean, efficient code and thoughtful,
-            user-centered design. I focus on creating interfaces that are not only visually appealing
-            but also intuitive and accessible across different devices. Additionally, I continuously refine my skills
-            and stay up to date with modern technologies to deliver high-quality, scalable solutions.
-        </p>
-        <div class="cta-group">
-            <a class="button" href="#projects">View Projects</a>
-            <a class="button button-outline" href="#about">About Me</a>
-            <a class="button button-outline" href="#photos">Photos</a>
+        <div class="glass-panel hero-glass">
+            <p class="kicker">Frontend Developer • UI Enthusiast</p>
+            <h2>Hi, I'm <span class="highlight">ANGEL MARCELO</span></h2>
+            <p>
+                I design and build responsive web experiences with clean, efficient code and thoughtful,
+                user-centered design. I focus on creating interfaces that are not only visually appealing
+                but also intuitive and accessible across different devices. Additionally, I continuously refine my skills
+                and stay up to date with modern technologies to deliver high-quality, scalable solutions.
+
+            </p>
+<h1></h1>
+            <div class="cta-group">
+                <a class="button" href="#projects">View Projects</a>
+                <a class="button button-outline" href="#about">About Me</a>
+                <a class="button button-outline" href="#photos">Photos</a>
+            </div>
         </div>
     </div>
 </header>
 
-<main>
-    <section id="about" class="section">
+<section id="about" class="section reveal">
+    <div class="glass-panel">
         <h3>About Me</h3>
         <p>
             I design and build responsive, scalable web experiences using clean, maintainable code and thoughtful,
             user-centered design principles. I focus on performance, accessibility, and cross-device compatibility,
-            ensuring seamless interactions across different platforms and screen sizes.
-            I am committed to writing efficient, well-structured code, continuously improving my development skills,
-            and staying up to date with modern technologies to create engaging and high-quality digital solutions.
+            ensuring seamless interactions across different platforms and screen sizes. I am committed to writing
+            efficient, well-structured code, continuously improving my development skills, and staying up to date
+            with modern technologies to create engaging and high-quality digital solutions.
         </p>
-        <h3>Hobbies</h3>
-        <p>I am passionate about fitness and programming, with a strong commitment to continuous learning and personal growth. I enjoy taking on new challenges, exploring innovative possibilities,
-            and expanding my knowledge across different fields,
-            while also embracing opportunities to discover new places and
-            experiences around the world.</p>
-    </section>
+    </div>
 
-    <section id="projects" class="section">
+    <div class="glass-panel">
+        <h3>Hobbies</h3>
+        <p>
+            I am passionate about fitness and programming, with a strong commitment to continuous learning and personal
+            growth. I enjoy taking on new challenges, exploring innovative possibilities, and expanding my knowledge
+            across different fields, while also embracing opportunities to discover new places and experiences around
+            the world.
+        </p>
+    </div>
+</section>
+
+    <section id="projects" class="section reveal">
         <h3>Featured Projects</h3>
         <div class="project-grid">
-            <article class="card">
+            <article class="card tilt">
                 <h4>Project One</h4>
                 <p>E-commerce landing page with smooth animations.</p>
                 <a href="#" aria-label="Open Project One">Live Demo →</a>
             </article>
 
-
-            <article class="card">
+            <article class="card tilt">
                 <h4>Project Two</h4>
                 <p>Portfolio template built with responsive-first approach.</p>
                 <a href="#" aria-label="Open Project Two">Live Demo →</a>
             </article>
 
-            <article class="card">
+            <article class="card tilt">
                 <h4>Project Three</h4>
                 <p>Dashboard UI with charts and dark/light mode support.</p>
                 <a href="#" aria-label="Open Project Three">Live Demo →</a>
@@ -71,39 +88,38 @@
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section reveal">
         <h2>Skills</h2>
         <div class="skill-group">
-            <a class="button button-outline">Phyton</a>
-            <a class="button button-outline" >HTML</a>
+            <a class="button button-outline">Python</a>
+            <a class="button button-outline">HTML</a>
             <a class="button button-outline">Java</a>
-            <a class="button button-outline" >React</a>
-            <a class="button button-outline" >C</a>
-            <a class="button button-outline" >JavaScript</a>
-            <a class="button button-outline" >Python</a>
-            <a class="button button-outline" >CSS</a>
-
+            <a class="button button-outline">React</a>
+            <a class="button button-outline">C</a>
+            <a class="button button-outline">JavaScript</a>
+            <a class="button button-outline">CSS</a>
         </div>
-
-        </ul>
-
     </section>
-    <section id="photos" class="section">
-        <h3>Photos</h3>
-        <img src=  width="350" height="250" alt="sunset">
-        <img src=width="350" height="250" alt="rio" >
-        <img src=width="350" height="250" alt="sunset-pictures">
-    </section>
+
+<section id="photos" class="section reveal">
+    <div class="glass-panel">
+        <h2>Photos</h2>
+        <img src="photo1.jpg" class="photo" alt="sunset">
+    </div>
+</section>
 </main>
-
-
-
 
 <footer id="contact" class="section footer">
     <h3>Let's work together</h3>
     <p>Email: angelmarcelo366@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/Marcelo Minchala</p>
-    <p>GitHub: github.com/Marcelo1230-12</p>
+    <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/MarceloMinchala" target="_blank">linkedin.com/in/MarceloMinchala</a>
+    </p>
+    <p>
+        GitHub:
+        <a href="https://github.com/Marcelo1230-12" target="_blank">github.com/Marcelo1230-12</a>
+    </p>
     <small>© <span id="year"></span> Angel Marcelo. All rights reserved.</small>
 </footer>
 

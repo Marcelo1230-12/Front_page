@@ -83,4 +83,25 @@ tiltCards.forEach((card) => {
   card.addEventListener("mouseleave", () => {
     card.style.transform = "perspective(700px) rotateX(0) rotateY(0) translateY(0)";
   });
+  const toggleButton = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
+
+  // Load saved theme or respect system preference
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+    htmlElement.setAttribute('data-theme', 'dark');
+  } else {
+    htmlElement.setAttribute('data-theme', 'light');
+  }
+
+  // Toggle theme on click
+  toggleButton.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });Copied!
 });
